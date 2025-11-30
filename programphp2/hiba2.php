@@ -14,8 +14,6 @@ if (isset($_POST['submit'])) {
 
         $units = (int)$units;
         $bill = 0;
-
-        // Tariff Calculation
         if ($units <= 100) {
             $bill = $units * 5;
         } elseif ($units <= 200) {
